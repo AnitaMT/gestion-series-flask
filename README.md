@@ -5,4 +5,5 @@ Este es un proyecto simple en el que los usuarios pueden gestionar las series en
 ## Funciones principales
 1. Registrar usuario.
 2. Iniciar sesión.
-3. Añadir serie.
+3. Cerrar sesión.
+4. Añadir serie.
