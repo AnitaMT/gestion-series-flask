@@ -1,0 +1,74 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8fafc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rebeccapurple;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 28px;
+    color: #333;
+}
+
+nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #4a90e2;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #357ab7;
+}
+
+/* Secciones de series */
+.series-section {
+    margin-bottom: 40px;
+}
+
+.series-section h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Lista de series */
+.series-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.series-item {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rebeccapurple;
+    line-height: 1.6;
+}
+
+/* Elementos en negrita dentro de la serie */
+.series-item strong {
+    color: #333;
+}
