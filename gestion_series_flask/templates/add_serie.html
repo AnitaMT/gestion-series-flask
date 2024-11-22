@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Agregar Series</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='addserie.css') }}">
+</head>
+<body>
+    <div class="form-container">
+        <p> <a href="{{ url_for('home') }}">Volver a la Home Page</a></p>
+        <h2>AÑADIR SERIES</h2>
+        <form method="post" action="{{ url_for('add_series') }}">
+            <label for="nombre">Nombre de la serie:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre de la serie" required>
+
+            <label for="sinopsis">Sinopsis:</label>
+            <textarea id="sinopsis" name="sinopsis" placeholder="Escribe la sinopsis aquí..." maxlength="300" required></textarea>
+
+            <label for="puntuacion">Puntuación:</label>
+            <input type="number" id="puntuacion" name="puntuacion" placeholder="Indica un número del 1 al 10" min="1" max="10" required>
+
+            <label for="genero">Género:</label>
+            <input type="text" id="genero" name="genero" placeholder="Indica el género de la serie" required>
+
+            <label for="fecha_estreno">Fecha de estreno:</label>
+            <input type="date" id="fecha_estreno" name="fecha_estreno" required>
+
+            <label for="capitulos">Número de capítulos:</label>
+            <input type="number" id="capitulos" name="capitulos"  placeholder="Inserte número" required>
+
+            <label for="duracion_capitulos">Duración (en minutos):</label>
+            <input type="number" id="duracion_capitulos" name="duracion_capitulos" placeholder="Inserte duración" required>
+
+            <label for="categoria">Categoría de la serie:</label>
+            <select id="categoria" name="categoria" required>
+                <option value="" disabled selected>Selecciona una categoría</option>
+                <option value="series_por_ver">Series que me gustarían ver</option>
+                <option value="viendo">Series que estoy viendo</option>
+                <option value="series_vistas">Series vistas</option>
+            </select>
+
+            <button type="submit">Agregar Serie</button>
+        </form>
+    </div>
+</body>
+</html>
